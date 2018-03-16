@@ -1,0 +1,97 @@
+\documentclass[a4paper, 12pt]{article}
+
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel} 
+%\usepackage[colorlinks=true,citecolor=blue,linkcolor=black]{hyperref}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks = false,
+    urlcolor=blue,
+}
+
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=24mm,
+ right=22mm,
+ top=24mm,
+ bottom=24mm,
+ }
+
+
+\fancypagestyle{plain}{%
+  
+  %\renewcommand{\footrulewidth}{2pt}%
+  \fancyhf{}% clear all fields
+  \fancyhead[R]{
+  \includegraphics[height=0.8cm]{./data/IL.eps}
+  }%
+  \fancyhead[L]{
+  \includegraphics[height=0.8cm]{./data/espci.png}
+  }%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{1pt}%
+}
+
+\pagestyle{plain}
+\begin{document}
+
+\begin{center}
+\parbox[height=1cm]{2cm}{}\\
+{\large \bf{%(document_title)s\\}}
+\vspace{0.15cm}
+{\large {%(document_subtitle)s}}
+\end{center}
+\vspace{0.1cm}
+
+
+%\begin{tabular}{lp{12cm}}
+%\textbf{Laboratory} & Langevin Institute, ESPCI Paris, CNRS\\
+%\end{tabular}\hfill
+
+\subsubsection*{Contact}
+\noindent
+Sébastien Popoff, \href{mailto:sebastien.popoff@espci.fr}{sebastien.popoff@espci.fr} ; 
+%Arthur Goetschy, \href{mailto:arthur.goetschy@espci.fr}{arthur.goetschy@espci.fr}\\[-1.5em]
+
+%(main_text)s
+
+ 
+
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width=0.65\textwidth]{images/TMfiber.pdf}
+%\caption{Setup for the measurement of the transmission matrix of a multimode fiber.}
+%\label{TMfiber}
+%\end{figure}
+
+%\subsubsection*{Candidate profile}
+%
+%The candidate should have a Master’s degree in Optical Engineering, Physics, Computer Sciences, Applied Mathematics, or a related field.
+%As the project involves experimental, theoretical and simulation works, the candidate should demonstrate multidisciplinary skills.
+%An experience in one or more of those fields would be appreciated:  computational imaging or digital signal processing, physics of light scattering or waveguides, manipulation of matrices, experimental optics or optical communications.
+%
+%The candidate should have a professional working proficiency in English with strong communication skills. 
+%Programming skills in C++, Pyhton and/or Matlab are required. 
+%%He should be able and be able to work both independently and as part of a team. Advanced programming skills in MATLAB, Python and/or C++ are essential.
+
+
+%\subsubsection*{References}
+%\vskip-0.9cm
+%{\footnotesize\
+%\renewcommand{\refname}{}
+%\vspace*{-1.1cm}
+%\bibliographystyle{revtex}
+%\bibliography{biblio}
+%}
+
+\end{document}
+
+
